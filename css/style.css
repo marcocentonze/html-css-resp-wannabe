@@ -132,7 +132,7 @@ img {
 /* RISOLUZIONE TABLET */
 
 @media screen and (max-width:767px) {
-    div.container {
+    .container {
         width: 100%;
     }
         
@@ -140,37 +140,26 @@ img {
 
 /* RISOLUZIONE MOBILE */
 @media screen and (max-width:479px) {
-
-    *{
-        display: flex;
-        flex-direction: column;
+    .row{
+        flex-wrap:wrap;
+        flex-direction:column;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
     }
-    
-    .container{
-      width: 100%;
-        
-    }
-
-    .lessons .col, .steps .col ,.why-us .col-left, .why-us .col-right {
+    .lessons .col {
         width: 100%;
     }
-
-    .steps .col{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    div.col {
+        margin-bottom:4rem;
     }
-
-    .why-us .col-left {
-        margin-bottom: 4rem;
+    
+    .steps .col {
+        width: 100%;
     }
-
-    .lessons .text{
-        padding-bottom: 32px;
-        padding-left: 16px;
-        padding-right: 16px;
+    .why-us .col-left{
+        width: 100%;
+    }
+    .why-us .col-right{
+        width: 100%;
     }
 }
-
